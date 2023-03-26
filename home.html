@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abubaker's website</title>
+</head>
+<body>
+    <div class="rectangle2">
+        <h3>WELCOME TO ABUBAKER'S WEBSITE </h3>
+    </div>
+ 
+    
+    <div class="rectangle">
+        <h1> Enter your name </h1>
+        <input id="Input">
+        <button onclick="button1()"> Enter </button>
+        <h2 id="message">   </h2>
+
+    </div> 
+    
+    <audio loop autoplay>
+        <source src="videoplayback.ogg" type="audio/ogg">
+        <source src="videoplayback.mp3" type="audio/mp3">
+
+      </audio>
+
+
+    <style>
+        body { 
+            background-image: url('5927911.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;  
+            text-align: center;
+            color: rgb(0, 204, 255);
+            font-size: 100%;
+
+        }
+        h1::before { 
+            position: absolute;
+            text-align: center;
+            left: 39%;
+            font-size: 2.5em;
+
+
+        }
+
+        h2::before { 
+            position: absolute;
+            text-align: center;
+            left: 23%;
+            top: 38%;
+            color: rgb(255, 255, 255);
+            font-size: 2.5em;
+
+        }
+        h3{
+            position: absolute;
+            text-align: center;
+            color: rgb(162, 0, 255);
+            font-size: 3em;
+
+        }
+
+        
+        input::before{
+            position: absolute;
+            text-align: center;
+            top: 15%;
+            left: 41.5%;
+            height: 30px;;
+            width:  200px;
+            font-size: 1.5em;
+
+        }
+
+        button::before{
+            position: absolute;
+            text-align: center;
+            top: 43%;
+            left: 45.5%;
+            height: 50px;;
+            width:  60px;
+            background-color: rgb(174, 174, 237);
+            color: white;
+        }                    
+
+        .rectangle {
+            position: absolute;
+            height: 300px;
+            width: 600px;
+            background-color: #1a1c3fca;
+            top: 40%;
+            left: 30%;
+
+
+        }
+        .rectangle2{
+            position: absolute;
+            height: 200px;
+            width: 800px;
+            background-color: #1a1c3fca;
+            top: 7%;
+            left: 25%;
+        }
+
+
+
+    </style>
+
+    <script>
+        function button1() {
+            let Input = document.querySelector("#Input");
+            let message = document.querySelector("#message");
+
+            message.innerHTML = "WELCOME TO MY WEBSITE"+  "<br />" +  "<br />" + Input.value;
+
+        }
+    </script>
+</body>
+</html>
